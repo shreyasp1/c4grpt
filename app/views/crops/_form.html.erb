@@ -1,4 +1,17 @@
-
+<%= simple_form_for @crop do |form| %>
+  <fieldset>
+    <legend><%= controller.action_name.capitalize %> Crop</legend>
+    <%= form.input :name, collection: Crop::NAMES %>
+    <%= form.input :season, collection: Crop::SEASONS %>
+    <div class="form-actions">
+    <%= form.hidden_field :farm_id, :value =>@crop.farm_id %>
+    <%= form.submit 'confirm', class: 'button' %>
+    <%= link_to 'Cancel', crops_path, :class => 'button secondary' %>
+    </div>
+  </fieldset>
+  
+<% end %>
+<!--
 
 <%= form_with(model: crop, local: true) do |form| %>
   <% if crop.errors.any? %>
