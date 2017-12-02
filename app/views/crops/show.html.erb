@@ -20,5 +20,10 @@
   <%= @crop.farm_id %>
 </p>
 
+<p>
+  <strong>Crop id:</strong>
+  <%= @crop.id %>
+</p>
+
 <%= link_to 'Edit', edit_crop_path(@crop) %>
 <%= link_to 'Next', new_finance_path(farm_id: @crop.farm_id, crop_id: @crop.id) %>

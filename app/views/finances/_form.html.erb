@@ -22,6 +22,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :budget_in_Rupees %>
+    <%= form.text_field :budget, id: :finance_budget %>
+  </div>
+
+  <div class="field">
     <%= form.hidden_field :farm_id, :value =>@finance.farm_id %>
     <%= form.hidden_field :crop_id, :value =>@finance.crop_id %>
   </div>

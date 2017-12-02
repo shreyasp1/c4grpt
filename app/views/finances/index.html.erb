@@ -10,11 +10,12 @@
 <table>
   <thead>
     <tr>
-      <th>loan amount</th>
+      <th>Loan amount</th>
       <th>Interest rate</th>
+      <th>Budget</th>
       <th>Farm Id</th>
       <th>Crop Id</th>
-      <th colspan="4"></th>
+      <th colspan="5"></th>
     </tr>
   </thead>
 
@@ -23,6 +24,7 @@
       <tr>
         <td><%= finance.outstanding_loan %></td>
         <td><%= finance.interest_rate %></td>
+        <td><%= finance.budget %></td>
         <td><%= finance.farm_id %></td>
         <td><%= finance.crop_id %></td>
         <td><%= link_to 'Show', finance %></td>

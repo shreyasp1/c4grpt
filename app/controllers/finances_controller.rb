@@ -71,6 +71,6 @@ class FinancesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def finance_params
-      params.require(:finance).permit(:outstanding_loan, :interest_rate, :farm_id, :crop_id, farms_attributes: [:id], crops_attributes: [:id])
+      params.require(:finance).permit(:outstanding_loan, :interest_rate, :budget, :farm_id, :crop_id, farms_attributes: [:id], crops_attributes: [:id])
     end
 end
