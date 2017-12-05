@@ -69,6 +69,6 @@ class FarmsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def farm_params
-      params.require(:farm).permit(:size, :location, :irrigation)
+      params.require(:farm).permit(:size, :location)
     end
 end
